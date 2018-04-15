@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  remark:
+    build: remark
+    ports:
+      - 4100:4100
+    volumes:
+      - ./remark/src/:/var/www/html/
