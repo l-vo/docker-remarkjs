@@ -2,15 +2,23 @@
 
 This project build a container for a Remarkjs slideshow
 
-## Usage
+## Before starting the container
+Create a `src` directory in the `remark` folder of this project. Then, put your markdown files inside. 
+ 
+If you don't do that before starting the container, a `src` directory will be created with example markdown files. You will be able to replace them by your own files but if you remove the `node_modules` folder, you'll need to restart the container for recreating it:
+```bash
+$ docker-compose restart
+```
+
+## Let's go
 ```bash
 $ docker-compose up -d
 ```
-You can watch installation progress with the command:
+You can watch installation progress with the command (it may take a while the first time):
 ```bash
 $ docker-compose logs -f
 ```
-Once the installation is finished, the remark/src directory should be populated with Remarkjs files. You will view your slideshow at the url:
+Once the installation is finished, you should view your slideshow at the url:
 
 `http://container_ip:4100`
 
